@@ -25,6 +25,49 @@
         </div>
     </div>
     <!-- preloader end -->
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light pb-3 shadow mb-4 fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANACEA CARE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
+                    <span class="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-lg"></span>
+                </button>
+            <div class="offcanvas offcanvas-start" data-bs-hideresize="true" tabindex="-1" id="offcanvasNavbarExample-expand-lg" aria-labelledby="offcanvasNavbarExample-expand-lg">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel" style="color:white;">Bootstrap 5</h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>                            
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#departments">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#doctors">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="appointmentBtn"><a class="text-decoration-none text-light" href="#appointment">Make an Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- header end -->
 
 
     <!-- hero start -->
@@ -100,9 +143,10 @@
                Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. 
               Suscipit aut voluptate.</p>
               <div class="d-flex flex-row">
-                <div class="about__right--icon mt-3"><i class="bx bx-fingerprint"></i></div>
+                <div class="about__right--icon mt-3"><i class="fa-solid fa-fingerprint"></i></div>
                 <div class="about__right--content"><h4 class="about__right--contentTitle"><a href="">Lorem Ipsum</a></h4>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p></div>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                    atque</p></div>
               </div>
               <div class="d-flex flex-row">
                 <div class="about__right--icon mt-3"><i class="bx bx-gift"></i></div>
@@ -151,8 +195,10 @@
     <!-- counter end -->
     <!--Services section start  -->
     <section class="services container">
-      <h2 class="text-center services__title">Services</h2>
-      <p class="services__text text-center">Magnam dolores commodi suscipit. Necessitatibus 
+      <h2 class="text-center services__title mb-1">Services</h2>
+      <div class="commonIcon">
+    </div>
+      <p class="services__text mt-3 text-center">Magnam dolores commodi suscipit. Necessitatibus 
         eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
         Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       <div class="services__items">
@@ -191,10 +237,167 @@
 
     </section>
     <!--Services section end  -->
+    <!-- doctors section start -->
+    <section id="doctors" class="container doctors mt-5">
+      <h2 class="text-center mb-1">Doctors</h2>
+      <div class="commonIcon"></div>
+      <p class="text-center mt-4">Magnam dolores commodi suscipit. Necessitatibus 
+        eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. 
+        Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+         Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <div class="doctors__items">
+      <div class="doctor shadow-lg m-2 rounded p-3">
+        <div class="d-flex flex-row">
+          <div class="doctor__image mt-2">
+            <img class="img-fluid" src="assets/img/doctors/doctors-1.jpg" alt="">
+          </div>
+          <div class="doctor__details ms-5">
+            <h2 class="mb-2">Walter White</h2>
+            <div class="line mb-4"></div>
+            <h6 class="mb-3">Chief Medical Officer</h6>
+            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+            <div class="d-flex flex-row">
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor m-2 shadow-lg rounded p-3">
+        <div class="d-flex flex-row">
+          <div class="doctor__image mt-2">
+            <img class="img-fluid" src="assets/img/doctors/doctors-2.jpg" alt="">
+          </div>
+          <div class="doctor__details ms-5">
+            <h2 class="mb-2">Sarah Jhonson</h2>
+            <div class="line mb-4"></div>
+            <h6 class="mb-3">Anesthesiologist</h6>
+            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+            <div class="d-flex flex-row">
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor shadow-lg m-2 rounded p-3">
+        <div class="d-flex flex-row">
+          <div class="doctor__image mt-2">
+            <img class="img-fluid" src="assets/img/doctors/doctors-3.jpg" alt="">
+          </div>
+          <div class="doctor__details ms-5">
+            <h2 class="mb-2">
+              William Anderson</h2>
+            <div class="line mb-4"></div>
+            <h6 class="mb-3">Cardiology</h6>
+            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+            <div class="d-flex flex-row">
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor shadow-lg m-2 rounded p-3">
+        <div class="d-flex flex-row">
+          <div class="doctor__image mt-2">
+            <img class="img-fluid" src="assets/img/doctors/doctors-4.jpg" alt="">
+          </div>
+          <div class="doctor__details ms-5">
+            <h2 class="mb-2">Amanda Jepson</h2>
+            <div class="line mb-4"></div>
+            <h4 class="mb-3">Neurosurgeon</h4>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="d-flex flex-row">
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <!-- doctors section end -->
+    <!-- question section start -->
+    <section class="question mt-5">
+   <div class="container">
+    <h2 class="text-center mt-5">Frequently Asked Questions</h2>
+    <div class="commonIcon"></div>
+    <div class="">
+      <ul class="accordion-list">
+        <li class="question__items">
+          <div class="d-flex justify-content-between question__item"><h3>Non consectetur a erat nam at lectus urna duis?</h3> <i class="fa-solid fa-angle-down"></i></div>
+          <div class="answer">
+            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla
+               urna porttitor rhoncus dolor purus non.</p>
+         </div>
+        </li>
+        <li class="question__items">
+          <div class="d-flex justify-content-between question__item"><h3>Feugiat scelerisque varius morbi enim nunc?</h3> <i class="fa-solid fa-angle-down"></i></div>
+          <div class="answer">
+            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. 
+              Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+         </div>
+        </li>
+        <li class="question__items">
+          <div class="d-flex justify-content-between question__item"><h3>Dolor sit amet consectetur adipiscing elit?</h3> <i class="fa-solid fa-angle-down"></i></div>
+          <div class="answer">
+            <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie
+               at elementum eu facilisis sed odio morbi quis</p>
+         </div>
+        </li>
+        <li class="question__items">
+          <div class="d-flex justify-content-between question__item"><h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3> <i class="fa-solid fa-angle-down"></i></div>
+          <div class="answer">
+            <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+         </div>
+        </li>
+        <li class="question__items">
+          <div class="d-flex justify-content-between question__item"><h3>Non consectetur a erat nam at lectus urna duis?</h3> <i class="fa-solid fa-angle-down"></i></div>
+          <div class="answer">
+            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla
+               urna porttitor rhoncus dolor purus non.</p>
+         </div>
+        </li>
+      </ul>
+
+    </div>
+   </div>
+    </section>
+    <!-- asked question end -->
+    <!-- gallery start -->
+    <section class="gallery container-fluid mt-5">
+      <h2 class="text-center mb-3">Gallery</h2>
+      <div class="commonIcon mb-5"></div>
+      <p class="mb-5 text-center container">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <div class="row">
+        <img src="assets/img/gallery/gallery-1.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-2.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-3.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-4.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-5.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-6.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-7.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+        <img src="assets/img/gallery/gallery-8.jpg" alt="" class="mb-3 col-lg-3 col-md-4 col-sm-12 gallery__img">
+      </div>
+
+    </section>
+    <!-- gallary end -->
+
     
     <!-- external JavaScript link added  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" 
