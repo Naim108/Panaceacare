@@ -26,6 +26,9 @@
     transform: translate(-50%,-50%);
 }
 /* style for header section */
+.navbar-toggler-icon:hover{
+    color: #000;
+}
 .navbar-brand{
     color: #2c4964 !important;
     font-weight: 900;

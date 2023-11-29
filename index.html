@@ -16,6 +16,11 @@
      <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- carousel css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- preloader start-->
@@ -27,7 +32,7 @@
     <!-- preloader end -->
     <!-- header start -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light pb-3 shadow mb-4 fixed-top" id="navbar">
+      <nav class="navbar navbar-expand-lg pb-3 shadow mb-4 fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">PANACEA CARE</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
@@ -245,84 +250,91 @@
         eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. 
         Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
          Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    <div class="doctors__items">
-      <div class="doctor shadow-lg m-2 rounded p-3">
-        <div class="d-flex flex-row">
-          <div class="doctor__image mt-2">
-            <img class="img-fluid" src="assets/img/doctors/doctors-1.jpg" alt="">
+    <div class="doctors__items p-5">
+      <div class="doctor">
+        <div class="row">
+          <div class="col-5">
+            <img class="doctor__image " src="assets/img/doctors/doctors-1.jpg" alt="">
           </div>
-          <div class="doctor__details ms-5">
-            <h2 class="mb-2">Walter White</h2>
-            <div class="line mb-4"></div>
-            <h6 class="mb-3">Chief Medical Officer</h6>
-            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-            <div class="d-flex flex-row">
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+          <div class="col-7">
+            <div class="doctor__details">
+              <h2 class="mb-2">Walter White</h2>
+              <div class="line mb-4"></div>
+              <h6 class="mb-3">Chief Medical Officer</h6>
+              <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+              <div class="d-flex flex-row">
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="doctor m-2 shadow-lg rounded p-3">
-        <div class="d-flex flex-row">
-          <div class="doctor__image mt-2">
-            <img class="img-fluid" src="assets/img/doctors/doctors-2.jpg" alt="">
+        </div>
+      <div class="doctor">
+        <div class="row">
+          <div class="col-5">
+            <img class="doctor__image " src="assets/img/doctors/doctors-2.jpg" alt="">
           </div>
-          <div class="doctor__details ms-5">
-            <h2 class="mb-2">Sarah Jhonson</h2>
-            <div class="line mb-4"></div>
-            <h6 class="mb-3">Anesthesiologist</h6>
-            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-            <div class="d-flex flex-row">
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+          <div class="col-7">
+            <div class="doctor__details">
+              <h2 class="mb-2">Sarah Jhonson</h2>
+              <div class="line mb-4"></div>
+              <h6 class="mb-3">Anesthesiologist</h6>
+              <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+              <div class="d-flex flex-row">
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="doctor shadow-lg m-2 rounded p-3">
-        <div class="d-flex flex-row">
-          <div class="doctor__image mt-2">
-            <img class="img-fluid" src="assets/img/doctors/doctors-3.jpg" alt="">
+        </div>
+      <div class="doctor">
+        <div class="row">
+          <div class="col-5">
+            <img class="doctor__image " src="assets/img/doctors/doctors-3.jpg" alt="">
           </div>
-          <div class="doctor__details ms-5">
-            <h2 class="mb-2">
-              William Anderson</h2>
-            <div class="line mb-4"></div>
-            <h6 class="mb-3">Cardiology</h6>
-            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-            <div class="d-flex flex-row">
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+          <div class="col-7">
+            <div class="doctor__details">
+              <h2 class="mb-2"> William Anderson</h2>
+              <div class="line mb-4"></div>
+              <h6 class="mb-3">Anesthesiologist</h6>
+              <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+              <div class="d-flex flex-row">
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="doctor shadow-lg m-2 rounded p-3">
-        <div class="d-flex flex-row">
-          <div class="doctor__image mt-2">
-            <img class="img-fluid" src="assets/img/doctors/doctors-4.jpg" alt="">
+        </div>
+      <div class="doctor">
+        <div class="row">
+          <div class="col-5">
+            <img class="doctor__image " src="assets/img/doctors/doctors-4.jpg" alt="">
           </div>
-          <div class="doctor__details ms-5">
-            <h2 class="mb-2">Amanda Jepson</h2>
-            <div class="line mb-4"></div>
-            <h4 class="mb-3">Neurosurgeon</h4>
-            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-            <div class="d-flex flex-row">
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
-              <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
-              <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+          <div class="col-7">
+            <div class="doctor__details">
+              <h2 class="mb-2">Sarah Jhonson</h2>
+              <div class="line mb-4"></div>
+              <h6 class="mb-3">Neurosurgeon</h6>
+              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <div class="d-flex flex-row">
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-x-twitter me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon fa-brands me-3 fa-facebook"></i>
+                <i class="d-flex align-items-center justify-content-center fa-brands fa-instagram me-3 doctor__socialIcon"></i>
+                <i class="d-flex align-items-center justify-content-center doctor__socialIcon me-3 fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </div>
 
     </section>
@@ -392,6 +404,199 @@
 
     </section>
     <!-- gallary end -->
+    <!-- testimonial start -->
+  <div class="owl-carousel container owl-theme">
+    <div class="item p-3">
+      <div class="testimonial__item">
+      <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+        class="testimonial__item--img" alt="..."></div>
+        <div class="text-center">
+          <h3 class="testimonial__item--name">Saul Goodman</h3>
+          <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+          <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec 
+                porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+        </div>
+    </div>
+  </div>
+    <div class="item p-3">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+    <div class="item p-3">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="item"> <div class="testimonial__item">
+      <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+        class="testimonial__item--img" alt="..."></div>
+        <div class="text-center">
+          <h3 class="testimonial__item--name">Saul Goodman</h3>
+          <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+          <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec 
+                porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+        </div>
+    </div>
+  </div>
+
+    <div class="item">
+      <div class="testimonial__item">
+        <div class=""><img src="assets/img/testimonials/testimonials-1.jpg" 
+          class="testimonial__item--img" alt="..."></div>
+          <div class="text-center">
+            <h3 class="testimonial__item--name">Saul Goodman</h3>
+            <h4 class="testimonial__item--title">Ceo &amp; Founder</h4>
+            <p class="text-start"><i class="bx testimonial__item--quote bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec 
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                  aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx testimonial__item--quote bxs-quote-alt-right quote-icon-right"></i></p>
+          </div>
+      </div>
+    </div>
+</div>
+<!-- testimonial end -->
+
 
     
     <!-- external JavaScript link added  -->
@@ -408,6 +613,9 @@
     <script>
       AOS.init();
     </script>
+    <!-- carousel js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 </html>
